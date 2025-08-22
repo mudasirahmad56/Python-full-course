@@ -1,8 +1,20 @@
-letter = '''Dear <Name>,
-your selected in Microsoft
+s = set()
 
-Congratulations on your achievement! We are excited to have you on board and look forward to your contributions to the team!
-<Date>'''
+n = input("Enter number:")
+s.add(int(n))
+n = input("Enter number:")
+s.add(int(n))
+n = input("Enter number:")
+s.add(int(n))
+n = input("Enter number:")
+s.add(int(n))
+n = input("Enter number:")
+s.add(int(n))
+n = input("Enter number:")
+s.add(int(n))
+n = input("Enter number:")
+s.add(int(n))
+n = input("Enter number:")
+s.add(int(n))
 
-print(letter.replace("<Name>", "Mudasir").replace("<Date>", "01 August,2025"))
-
+print(s)

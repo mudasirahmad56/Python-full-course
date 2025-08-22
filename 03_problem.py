@@ -1,3 +1,7 @@
-name = "mudasir is good boy and he is very good in python"
+s = set()
 
-print(name.find("  "))
+s.add(18)
+
+s.add("18")
+
+print(s)

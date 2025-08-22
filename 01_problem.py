@@ -1,3 +1,9 @@
-name = input("enter your name: ")
+words = {
+    "Tea" : "chai",
+    "dog" : "spayee",
+    "cat" : "billi",
+}
 
-print(f"good morning, {name}")
+word = input("Enter the word you want to translate:")
+
+print(words[word])

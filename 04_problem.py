@@ -1,3 +1,19 @@
-name = "mudasir is good boy and he is very  good in python"
+d = {}
 
-print(name.replace("  ", " "))
+name = input("Enter friends name :")
+lang = input("Enter language :")
+d.update({name: lang})
+
+name = input("Enter friends name :")
+lang = input("Enter language :")
+d.update({name: lang})
+
+name = input("Enter friends name :")
+lang = input("Enter language :")
+d.update({name: lang})
+
+name = input("Enter friends name :")
+lang = input("Enter language :")
+d.update({name: lang})
+
+print(d)

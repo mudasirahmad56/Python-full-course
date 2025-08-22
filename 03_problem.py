@@ -1,2 +1,3 @@
-a = input("Enter the value of a:")
-print(type(a))
+name = "mudasir is good boy and he is very good in python"
+
+print(name.find("  "))

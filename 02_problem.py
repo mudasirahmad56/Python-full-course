@@ -1,5 +1,8 @@
-a = 56
+letter = '''Dear <Name>,
+your selected in Microsoft
 
-b = 6
+Congratulations on your achievement! We are excited to have you on board and look forward to your contributions to the team!
+<Date>'''
 
-print ("reminder when a is divided by b is" , a % b)
+print(letter.replace("<Name>", "Mudasir").replace("<Date>", "01 August,2025"))
+

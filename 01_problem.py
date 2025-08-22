@@ -1,4 +1,3 @@
-a = 5 
-b = 8
+name = input("enter your name: ")
 
-print(a + b)
+print(f"good morning, {name}")

@@ -1,6 +1,21 @@
-def f_to_c(f):
-    return 5*(f-32)/9
+import random
+def game():
+    print("you are playing the game..")
+    score = random.randint(1, 62)
 
-f =int(input("Enter temperature in fahrenheit: "))
-c = f_to_c(f)
-print(f"{round(c, 2)}°c")
+    with open("hiscore.txt") as f:
+        hiscore = f.read()
+        if(hiscore != ""):
+            hiscore = int(hiscore)
+        else:
+            hiscore = 0
+    
+    print(f"your score: {score}")
+    if(score > hiscore):
+        
+        with open("hiscore.txt", "w") as f:
+            f.write(str(score))
+
+    return score 
+
+game()

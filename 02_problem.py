@@ -1,21 +1,16 @@
-import random
-def game():
-    print("you are playing the game..")
-    score = random.randint(1, 62)
+class calculator:
 
-    with open("hiscore.txt") as f:
-        hiscore = f.read()
-        if(hiscore != ""):
-            hiscore = int(hiscore)
-        else:
-            hiscore = 0
+    def __init__(self,n):
+        self.n = n
+    def square(self):
+        print(f"the square is {self.n*self.n}")
+    def cube(self):
+        print(f"the cube is {self.n*self.n*self.n}")
     
-    print(f"your score: {score}")
-    if(score > hiscore):
-        
-        with open("hiscore.txt", "w") as f:
-            f.write(str(score))
+    def square_root(self):
+        print(f"the square root is {self.n**1/2}")
 
-    return score 
-
-game()
+a = calculator(4)
+a.square()
+a.cube()
+a.square_root()

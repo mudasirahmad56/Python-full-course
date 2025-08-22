@@ -1,7 +1,9 @@
-f = open("poem.txt")
-content = f.read()
-if("twnikle" in content):
-    print("The word twinkle is present in the content ")
-else:
-    print("The word twnikle present in the content")
-f.close()
+class programmer:
+    company = "GOOGLE"
+    def __init__(self, name, age,salary):
+        self.name = name
+        self.age = age
+        self.salary = salary
+p = programmer("Mudasir", 20, 5000000)
+print(p.name, p.age, p.salary)  
+

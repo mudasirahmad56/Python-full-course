@@ -1,7 +1,17 @@
-def inch_to_cm(inch):
-    return inch * 2.54
+from random import randint
+class train:
+    def __init__(slf,trainNo):
+          slf.trainNo = trainNo
+    def book(self,fro,to):
+        print(f"Ticket booked from {fro} to {to} in train number {self.trainNo}")
 
-n = int(input("Enter length in inches: "))
+    def get_status(self):
+        print(f"Train number {self.trainNo} is currently running.")
+ 
+    def getfare(self,fro,to):
+       print(f"Ticket fare from {fro} to {to} in train number {self.trainNo} is {randint(100, 500)}")
 
-print(f"the corresponding value in cms is {inch_to_cm(n)}")
-
+t = train(12345)
+t.book("hangu","india")
+t.get_status()
+t.getfare("hangu","india")

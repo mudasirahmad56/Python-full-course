@@ -1,13 +1,20 @@
-'''
-sum(1)
-sum(2)
-sum(3)
-sum(4)
-sum(n) = 1+2+3+4.....+n -1 +n
-sum(n) = sum(n-1) + n)
-'''
-def sum(n):
-    if n==1:
-        return 1
-    return sum(n-1) + n
-print(sum(5)) 
+class calculator:
+
+    def __init__(self,n):
+        self.n = n
+    def square(self):
+        print(f"the square is {self.n*self.n}")
+    def cube(self):
+        print(f"the cube is {self.n*self.n*self.n}")
+    
+    def square_root(self):
+        print(f"the square root is {self.n**1/2}")
+    @staticmethod
+    def print_message():
+        print("hello world")
+
+a = calculator(4)
+a.print_message()
+a.square()
+a.cube()
+a.square_root()

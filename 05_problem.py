@@ -1,3 +1,8 @@
-letter = "mudasir is good boy\n\t and he is very  good in python\n Thanks!"
+n = int(input("Enter a number: "))
 
-print (letter)
+i = 1
+sum = 0
+while(i<=n):
+    sum += i
+    i += 1
+    print(sum)

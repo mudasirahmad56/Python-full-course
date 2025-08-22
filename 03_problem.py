@@ -1,7 +1,7 @@
-s = set()
+n = int(input("Enter a number: "))
 
-s.add(18)
+i = 1
 
-s.add("18")
-
-print(s)
+while(i<11):
+    print(f"{n} X {i} = {n * i}")
+    i += 1

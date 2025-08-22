@@ -1,20 +1,5 @@
-s = set()
+I = ["Mudasir" , "Hassan" , "Mubashir" , "Musawir"]
 
-n = input("Enter number:")
-s.add(int(n))
-n = input("Enter number:")
-s.add(int(n))
-n = input("Enter number:")
-s.add(int(n))
-n = input("Enter number:")
-s.add(int(n))
-n = input("Enter number:")
-s.add(int(n))
-n = input("Enter number:")
-s.add(int(n))
-n = input("Enter number:")
-s.add(int(n))
-n = input("Enter number:")
-s.add(int(n))
-
-print(s)
+for name in I:
+    if(name.startswith("M")):
+        print(f"Hello {name}")

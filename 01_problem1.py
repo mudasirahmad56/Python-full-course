@@ -1,4 +1,17 @@
-n = int(input("Enter a number: "))
+a = 1
+b = 15
+c = 12
 
-for i in range(1, 11):
-    print(f"{n} X {i} = {n * i}")
+def greater(a, b, c):
+    if a > b and a > c:
+        return a
+    elif b > a and b > c:
+        return b
+    else:
+        return c
+    
+a = 1
+b = 15
+c = 12
+print(greater(a,b,c))
+

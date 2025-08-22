@@ -1,7 +1,4 @@
-n = int(input("Enter a number: "))
-
-i = 1
-
-while(i<11):
-    print(f"{n} X {i} = {n * i}")
-    i += 1
+print("b")
+print("b")
+print("c", end="")
+print("d", end="")

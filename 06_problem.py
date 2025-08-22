@@ -1,8 +1,7 @@
-# 5! = 1 X 2 X 3 X 4 X 5
+def inch_to_cm(inch):
+    return inch * 2.54
 
-n = int(input("Enter a number: "))
+n = int(input("Enter length in inches: "))
 
-product = 1
-for i in range(1, n + 1):
-    product = product * i
-print(f"The factorial of {n} is {product}")
+print(f"the corresponding value in cms is {inch_to_cm(n)}")
+
